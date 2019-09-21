@@ -9,6 +9,8 @@ import {
   NavLink } from 'reactstrap';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";  
 
+import { CartContext } from '../contexts/cart';
+
 export default class TopMenu extends Component {
   constructor(props) {
     super(props);
@@ -54,6 +56,13 @@ export default class TopMenu extends Component {
               <NavItem>
                 <NavLink>
                   <Link to="#">Cteate Account</Link>
+                </NavLink>
+                <NavLink>
+                  <CartContext.Consumer>
+                    {({ cartItems }) => (
+                      <Link to="#">Cart ({cartItems.length})</Link>
+                    )}
+                  </CartContext.Consumer>
                 </NavLink>
               </NavItem>
             </Nav>

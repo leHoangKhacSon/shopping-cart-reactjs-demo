@@ -6,21 +6,24 @@ import './App.css';
 import TopMenu from './components/TopMenu';
 import Product from './Pages/Product';
 
+import { CartProvider } from './contexts/cart';
+
 const Index = () => <h2>Home</h2>
 const Cart = () => <h2>Cart</h2>
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <TopMenu />
+    <CartProvider>
+      <Router>
+        <div className="App">
+          <TopMenu />
 
-        <Route path="/" exact component={Index} />
-        <Route path="/products/" component={Product} />
-        <Route path="/cart/" component={Cart} />
-      </div>
-    </Router>
-    
+          <Route path="/" exact component={Index} />
+          <Route path="/products/" component={Product} />
+          <Route path="/cart/" component={Cart} />
+        </div>
+      </Router>
+    </CartProvider>
   );
 }
 
