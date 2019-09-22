@@ -60,7 +60,7 @@ export default class TopMenu extends Component {
                 <NavLink>
                   <CartContext.Consumer>
                     {({ cartItems }) => (
-                      <Link to="#">Cart ({cartItems.length})</Link>
+                      <Link to='/cart/'>Cart ({cartItems.length})</Link>
                     )}
                   </CartContext.Consumer>
                 </NavLink>
