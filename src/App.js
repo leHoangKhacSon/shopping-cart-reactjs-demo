@@ -6,6 +6,7 @@ import './App.css';
 import TopMenu from './components/TopMenu';
 import Product from './Pages/Product';
 import Cart from './Pages/Cart';
+import ProductDetails from './Pages/ProductDetails';
 
 import { CartProvider } from './contexts/cart';
 
@@ -19,8 +20,9 @@ function App() {
           <TopMenu />
 
           <Route path="/" exact component={Index} />
-          <Route path="/products/" component={Product} />
+          <Route path="/products/" exact component={Product} />
           <Route path="/cart/" component={Cart} />
+          <Route path="/products/:id" component={ProductDetails} />
         </div>
       </Router>
     </CartProvider>
