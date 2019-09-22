@@ -6,6 +6,7 @@ import {
   Card, CardImg, CardText, CardBody,
   CardTitle, Button
 } from 'reactstrap';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom"; 
 
 import { CartContext } from '../contexts/cart';
 
@@ -48,6 +49,11 @@ class Product extends Component {
                     </Button> 
                     )}
                   </CartContext.Consumer> 
+                  <Link to={`/products/${product.id}`}>
+                    <Button>
+                      Details
+                    </Button>
+                  </Link>
                 </CardBody>
               </Card>
             </Col>
