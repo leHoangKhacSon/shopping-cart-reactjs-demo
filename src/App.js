@@ -5,11 +5,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import TopMenu from './components/TopMenu';
 import Product from './Pages/Product';
+import Cart from './Pages/Cart';
 
 import { CartProvider } from './contexts/cart';
 
 const Index = () => <h2>Home</h2>
-const Cart = () => <h2>Cart</h2>
 
 function App() {
   return (
