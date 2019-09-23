@@ -9,6 +9,10 @@ import {
 
 import SubFooter from '../subComponents/SubFooter';
 import './Footer.css';
+import urlImg from '../img/tick.svg';
+
+const urlImage = urlImg;
+    
 
 class Footer extends Component {
   render() {
@@ -26,17 +30,20 @@ class Footer extends Component {
                 </p>
                 <ul>
                   <li>
-                    <i className="fab fa-facebook-square fa-2x"></i>
-                  </li>
+                    <img src={urlImage} width="20" />
+                  </li> 
                   <li>
-                    <i className="fab fa-facebook-square fa-2x"></i>
-                  </li>
+                    <img src={urlImage} width="20" />
+                  </li> 
                   <li>
-                    <i className="fab fa-facebook-square fa-2x"></i>
-                  </li>
+                    <img src={urlImage} width="20" />
+                  </li> 
                   <li>
-                    <i className="fab fa-facebook-square fa-2x"></i>
-                  </li>
+                    <img src={urlImage} width="20" />
+                  </li> 
+                  <li>
+                    <img src={urlImage} width="20" />
+                  </li> 
                 </ul>
               </div>
             </Col>
@@ -46,19 +53,19 @@ class Footer extends Component {
                   Product
                 </p>
                 <ul>
-                  <SubFooter imgfoo="iconFoo">
+                  <SubFooter urlImage={urlImg}>
                     Sliptick
                   </SubFooter>
-                  <SubFooter imgfoo="iconFoo">
+                  <SubFooter urlImage={urlImage}>
                     Sliptick
                   </SubFooter>
-                  <SubFooter imgfoo="iconFoo">
+                  <SubFooter urlImage={urlImage}>
                     Sliptick
                   </SubFooter>
-                  <SubFooter imgfoo="iconFoo">
+                  <SubFooter urlImage={urlImage}>
                     Sliptick
                   </SubFooter>
-                  <SubFooter imgfoo="iconFoo">
+                  <SubFooter urlImage={urlImage}>
                     Sliptick
                   </SubFooter>
                 </ul>   
@@ -70,19 +77,19 @@ class Footer extends Component {
                   Resource
                 </p>
                 <ul>
-                  <SubFooter imgfoo="iconFoo">
+                  <SubFooter urlImage={urlImage}>
                     Sliptick
                   </SubFooter>
-                  <SubFooter imgfoo="iconFoo">
+                  <SubFooter urlImage={urlImage}>
                     Sliptick
                   </SubFooter>
-                  <SubFooter imgfoo="iconFoo">
+                  <SubFooter urlImage={urlImage}>
                     Sliptick
                   </SubFooter>
-                  <SubFooter imgfoo="iconFoo">
+                  <SubFooter urlImage={urlImage}>
                     Sliptick
                   </SubFooter>
-                  <SubFooter imgfoo="iconFoo">
+                  <SubFooter urlImage={urlImage}>
                     Sliptick
                   </SubFooter>
                 </ul>   
@@ -94,19 +101,19 @@ class Footer extends Component {
                   Contact
                 </p>
                 <ul>
-                  <SubFooter imgfoo="iconFoo">
+                  <SubFooter urlImage={urlImage}>
                     Sliptick
                   </SubFooter>
-                  <SubFooter imgfoo="iconFoo">
+                  <SubFooter urlImage={urlImage}>
                     Sliptick
                   </SubFooter>
-                  <SubFooter imgfoo="iconFoo">
+                  <SubFooter urlImage={urlImage}>
                     Sliptick
                   </SubFooter>
-                  <SubFooter imgfoo="iconFoo">
+                  <SubFooter urlImage={urlImage}>
                     Sliptick
                   </SubFooter>
-                  <SubFooter imgfoo="iconFoo">
+                  <SubFooter urlImage={urlImage}>
                     Sliptick
                   </SubFooter>
                 </ul>   
