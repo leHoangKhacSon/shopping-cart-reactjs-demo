@@ -8,6 +8,7 @@ import Product from './Pages/Product';
 import Cart from './Pages/Cart';
 import ProductDetails from './Pages/ProductDetails';
 import Footer from './components/Footer';
+import Slide from './components/Slide';
 
 import { CartProvider } from './contexts/cart';
 
@@ -19,6 +20,7 @@ function App() {
       <Router>
         <div className="App">
           <TopMenu />
+          <Slide />
 
           <Route path="/" exact component={Index} />
           <Route path="/products/" exact component={Product} />

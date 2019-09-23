@@ -15,10 +15,10 @@ class SubFooter extends Component {
   }
 
   render() {
-    const { children, imgfoo } = this.props;
+    const { children, urlImage } = this.props;
     return (
       <li>
-        <i>{ imgfoo }</i>
+        <img src={ urlImage } alt="..." width="20"/>
         <span>{ children }</span>
       </li>
     )

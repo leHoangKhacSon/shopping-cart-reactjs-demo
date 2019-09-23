@@ -42,17 +42,17 @@
 	transition: all .3s;
 }
 
-.about-us ul li:hover i{
+.about-us ul li:hover img{
 	transform: scale(1.2);
 	color: #2a2ab4;
 }
 
-.product-us ul li i {
+.product-us ul li img {
 	margin-right: 10px;
 	transition: all .3s;
 }
 
-.product-us ul li:hover i {
+.product-us ul li:hover img {
 	transform: scale(1.5);
 	color: #2a2ab4;
 }
@@ -63,9 +63,14 @@
 
 .product-us ul li {
 	padding: 2px 0;
+	transition: all .3s;
 }
 
-.product-us ul li i {
+.product-us ul li:hover {
+	color: #2a2ab4;
+}
+
+.product-us ul li img {
 	padding-right: 8px;	
 	font-size: 60%;
 }
