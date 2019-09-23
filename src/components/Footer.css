@@ -28,9 +28,7 @@
 }
 
 .about-us,
-.contact-us,
-.product-us,
-.resource {
+.product-us {
 	color: #333;
 }
 
@@ -49,25 +47,11 @@
 	color: #2a2ab4;
 }
 
-.contact-us ul {
-	list-style: none;
-	padding-top: 15px;
-	margin-left: -35px;
-}
-
-.contact-us ul li {
-	padding-top: 5px;
-}
-
-.contact-us ul li i,
-.resource ul li i,
-.product-us ul li, i {
+.product-us ul li i {
 	margin-right: 10px;
 	transition: all .3s;
 }
 
-.contact-us ul li:hover i,
-.resource ul li:hover i,
 .product-us ul li:hover i {
 	transform: scale(1.5);
 	color: #2a2ab4;
@@ -77,17 +61,10 @@
 	padding: 0;
 }
 
-.resource ul,
-.product-us ul {
-	padding: 0;
-}
-
-.resource ul li,
 .product-us ul li {
 	padding: 2px 0;
 }
 
-.resource ul li i,
 .product-us ul li i {
 	padding-right: 8px;	
 	font-size: 60%;
