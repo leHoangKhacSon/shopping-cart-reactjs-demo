@@ -7,6 +7,7 @@ import {
   CardTitle, Button
 } from 'reactstrap';
 
+import SubFooter from '../subComponents/SubFooter';
 import './Footer.css';
 
 class Footer extends Component {
@@ -45,26 +46,21 @@ class Footer extends Component {
                   Product
                 </p>
                 <ul>
-                  <li>
-                    <i className="fab fa-product-hunt" />
-                    <span> Sliptick</span>
-                  </li>
-                  <li>
-                    <i className="fab fa-product-hunt" />
-                    <span> Sliptick</span>
-                  </li>
-                  <li>
-                    <i className="fab fa-product-hunt" />
-                    <span> Sliptick</span>
-                  </li>
-                  <li>
-                    <i className="fab fa-product-hunt" />
-                    <span> Sliptick</span>
-                  </li>
-                  <li>
-                    <i className="fab fa-product-hunt"></i>
-                    <span> Sliptick</span>
-                  </li>
+                  <SubFooter imgfoo="iconFoo">
+                    Sliptick
+                  </SubFooter>
+                  <SubFooter imgfoo="iconFoo">
+                    Sliptick
+                  </SubFooter>
+                  <SubFooter imgfoo="iconFoo">
+                    Sliptick
+                  </SubFooter>
+                  <SubFooter imgfoo="iconFoo">
+                    Sliptick
+                  </SubFooter>
+                  <SubFooter imgfoo="iconFoo">
+                    Sliptick
+                  </SubFooter>
                 </ul>   
               </div>
             </Col>
@@ -74,26 +70,21 @@ class Footer extends Component {
                   Resource
                 </p>
                 <ul>
-                  <li>
-                    <i className="fab fa-product-hunt" />
-                    <span> Sliptick</span>
-                  </li>
-                  <li>
-                    <i className="fab fa-product-hunt" />
-                    <span> Sliptick</span>
-                  </li>
-                  <li>
-                    <i className="fab fa-product-hunt" />
-                    <span> Sliptick</span>
-                  </li>
-                  <li>
-                    <i className="fab fa-product-hunt" />
-                    <span> Sliptick</span>
-                  </li>
-                  <li>
-                    <i className="fab fa-product-hunt" />
-                    <span> Sliptick</span>
-                  </li>
+                  <SubFooter imgfoo="iconFoo">
+                    Sliptick
+                  </SubFooter>
+                  <SubFooter imgfoo="iconFoo">
+                    Sliptick
+                  </SubFooter>
+                  <SubFooter imgfoo="iconFoo">
+                    Sliptick
+                  </SubFooter>
+                  <SubFooter imgfoo="iconFoo">
+                    Sliptick
+                  </SubFooter>
+                  <SubFooter imgfoo="iconFoo">
+                    Sliptick
+                  </SubFooter>
                 </ul>   
               </div>
             </Col>
@@ -103,26 +94,21 @@ class Footer extends Component {
                   Contact
                 </p>
                 <ul>
-                  <li>
-                    <i className="fab fa-product-hunt" />
-                    <span> Sliptick</span>
-                  </li>
-                  <li>
-                    <i className="fab fa-product-hunt" />
-                    <span> Sliptick</span>
-                  </li>
-                  <li>
-                    <i className="fab fa-product-hunt" />
-                    <span> Sliptick</span>
-                  </li>
-                  <li>
-                    <i className="fab fa-product-hunt" />
-                    <span> Sliptick</span>
-                  </li>
-                  <li>
-                    <i className="fab fa-product-hunt" />
-                    <span> Sliptick</span>
-                  </li>
+                  <SubFooter imgfoo="iconFoo">
+                    Sliptick
+                  </SubFooter>
+                  <SubFooter imgfoo="iconFoo">
+                    Sliptick
+                  </SubFooter>
+                  <SubFooter imgfoo="iconFoo">
+                    Sliptick
+                  </SubFooter>
+                  <SubFooter imgfoo="iconFoo">
+                    Sliptick
+                  </SubFooter>
+                  <SubFooter imgfoo="iconFoo">
+                    Sliptick
+                  </SubFooter>
                 </ul>   
               </div>
             </Col>
