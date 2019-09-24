@@ -2,9 +2,7 @@ import React, {Component} from 'react';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
-  Container, Row, Col,
-  Card, CardImg, CardText, CardBody,
-  CardTitle, Button
+  Container, Row, Col
 } from 'reactstrap';
 
 import SubFooter from '../subComponents/SubFooter';
@@ -30,19 +28,19 @@ class Footer extends Component {
                 </p>
                 <ul>
                   <li>
-                    <img src={urlImage} width="20" />
+                    <img src={urlImage} width="20" alt="icon" />
                   </li> 
                   <li>
-                    <img src={urlImage} width="20" />
+                    <img src={urlImage} width="20" alt="icon" />
                   </li> 
                   <li>
-                    <img src={urlImage} width="20" />
+                    <img src={urlImage} width="20" alt="icon" />
                   </li> 
                   <li>
-                    <img src={urlImage} width="20" />
+                    <img src={urlImage} width="20" alt="icon" />
                   </li> 
                   <li>
-                    <img src={urlImage} width="20" />
+                    <img src={urlImage} width="20" alt="icon" />
                   </li> 
                 </ul>
               </div>

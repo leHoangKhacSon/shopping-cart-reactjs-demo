@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 import {
   Container, Row, Col,
   Card, CardImg, CardText, CardBody,
-  CardTitle, Button
+  CardTitle
 } from 'reactstrap';
 import { CartContext } from '../contexts/cart';
 

@@ -4,8 +4,7 @@ import {
   CarouselItem,
   CarouselControl,
   CarouselIndicators,
-  CarouselCaption,
-  Container
+  Button
 } from 'reactstrap';
 
 class Slide extends Component {
@@ -55,22 +54,38 @@ class Slide extends Component {
           onExited={this.onExited}
           key={item}
         >
-          <img src={item} height="700" width="1351" />
+          <img src={item} height="700" width="1351" alt="slideImage" />
         </CarouselItem>
       );
     });
 
     return (
-      <Carousel
-        activeIndex={activeIndex}
-        next={this.next}
-        previous={this.previous}
-      >
-        <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
-        { slides }
-        <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
-        <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
-      </Carousel>
+      <div>
+        <div className="sale">
+          <p>
+            Sale off 30%
+          </p>
+          <h2>
+            New Collection 2019
+          </h2>
+          <Button outline color="success" id="btn-shop-now">
+            <a href="/products/" className="link-shop">
+              Shop Now
+            </a>
+          </Button>{' '}
+        </div>
+        <Carousel
+          activeIndex={activeIndex}
+          next={this.next}
+          previous={this.previous}
+        >
+          <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
+          { slides }
+          <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
+          <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
+        </Carousel>
+      </div>
+      
     );
   }
 }

@@ -2,11 +2,11 @@ import React, {Component} from 'react';
 import axios from 'axios';
 
 import {
-  Container, Row, Col,
+  Row, Col,
   Card, CardImg, CardText, CardBody,
   CardTitle, Button
 } from 'reactstrap';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom"; 
+import { Link } from "react-router-dom"; 
 
 import { CartContext } from '../contexts/cart';
 

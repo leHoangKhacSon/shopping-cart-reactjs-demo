@@ -1,8 +1,6 @@
 import React from 'react';
 import { TabContent, TabPane,
-Nav, NavItem, NavLink,
-Card, Button, CardTitle,
-CardText, Row, Col 
+Nav, NavItem, NavLink
 } from 'reactstrap';
 import classnames from 'classnames';
 
