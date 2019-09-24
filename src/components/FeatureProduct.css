@@ -1,0 +1,31 @@
+.nav-tabs {
+  display: flex;
+	flex-direction: row;
+	justify-content: center;
+	border: none;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+.nav-tabs .nav-item {
+  text-transform: uppercase;
+	border: none;
+}
+
+.nav-tabs .nav-item a {
+  font-family: "Lato";
+	letter-spacing: 0.2em;
+	word-spacing: 4px;
+	color: #AAA;
+	font-size: 18px;
+	border: none;
+}
+
+.feature-product {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 24px;
+	letter-spacing: 10px;
+	word-spacing: 20px;
+	font-family: "Lato";
+}
