@@ -46,7 +46,6 @@ class Slide extends Component {
   render() {
     const { activeIndex } = this.state;
     const  { items } = this.props;
-    console.log(items);
     const slides = items.map((item) => {
       return (
         <CarouselItem

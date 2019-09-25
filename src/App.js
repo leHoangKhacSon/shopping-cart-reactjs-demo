@@ -38,9 +38,18 @@ const imgServices = [
     title: "BONUS PLUS",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo blanditiis odio."
   }
-]
+];
+const imgsHotProduct = [
+  "https://res.cloudinary.com/dcailib1d/image/upload/v1568446355/ImagesExpress/pic1_qkgxpf.jpg",
+  "https://res.cloudinary.com/dcailib1d/image/upload/v1568446337/ImagesExpress/pic2_kdplhs.jpg",
+  "https://res.cloudinary.com/dcailib1d/image/upload/v1568446392/ImagesExpress/pic3_ystnqg.jpg"
+];
 
-const Index = () => <Home items={ itemsUrl } services={ imgServices } />;
+const Index = () => <Home 
+                      items={ itemsUrl } 
+                      services={ imgServices } 
+                      imgsHotProduct={ imgsHotProduct } 
+                    />;
 
 function App() {
   return (
@@ -48,8 +57,7 @@ function App() {
       <Router>
         <div className="App">
           <TopMenu />
-          
-
+        
           <Route path="/" exact component={Index} />
           <Route path="/products/" exact component={Product} />
           <Route path="/cart/" component={Cart} />
