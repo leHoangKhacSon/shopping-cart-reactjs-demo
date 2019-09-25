@@ -14,10 +14,33 @@ import slide2 from './img/slideshow2.jpg';
 
 import { CartProvider } from './contexts/cart';
 
-const Index = () => <Home items={ itemsUrl } />;
 const itemsUrl = [
   slide1, slide2, slide1
 ]
+const imgServices = [
+  {
+    imgService: slide1,
+    title: "FREE SHIPPING",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo blanditiis odio."
+  },
+  {
+    imgService: slide1,
+    title: "MONEY BACK",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo blanditiis odio."
+  },
+  {
+    imgService: slide1,
+    title: "ONLINE SUPPORT",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo blanditiis odio."
+  },
+  {
+    imgService: slide1,
+    title: "BONUS PLUS",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo blanditiis odio."
+  }
+]
+
+const Index = () => <Home items={ itemsUrl } services={ imgServices } />;
 
 function App() {
   return (
