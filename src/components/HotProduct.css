@@ -1,0 +1,92 @@
+/* HOT PRODUCT COMPONENT */
+/* Border-Style */
+.box-img {
+	box-sizing: border-box;
+	position: relative;
+	padding: 0;
+	margin: 50px 0;
+}
+/* left */
+.border-style-left {
+	border: none;
+	transition: all 0.3s;
+	position: absolute;
+	border: 1px solid #111;
+	top: 50%;	
+	left: 10px;
+	bottom: 50%;
+	opacity: 0;
+}
+
+.box-img:hover .border-style-left {
+	opacity: 1;
+	border-right: 1px solid #111;
+	position: absolute;
+	top: 10px;	
+	left: 10px;
+	bottom: 10px;
+	transform: scale(1, 1);
+}
+/* right */
+.border-style-right {
+	border: none;
+	transition: all 0.3s;
+	position: absolute;
+	border: 1px solid #111;
+	top: 50%;	
+	right: 10px;
+	bottom: 50%;
+	opacity: 0;
+}
+
+.box-img:hover .border-style-right {
+	opacity: 1;
+	border-right: 1px solid #111;
+	position: absolute;
+	top: 10px;	
+	right: 10px;
+	bottom: 10px;
+	transform: scale(1, 1);
+}
+/* top */
+.border-style-top {
+	border: none;
+	transition: all 0.3s;
+	position: absolute;
+	border: 1px solid #111;
+	right: 50%;	
+	top: 10px;
+	left: 50%;
+	opacity: 0;
+}
+
+.box-img:hover .border-style-top {
+	opacity: 1;
+	border-right: 1px solid #111;
+	position: absolute;
+	top: 10px;	
+	left: 10px;
+	right: 10px;
+	transform: scale(1, 1);
+}
+/* bottom */
+.border-style-bottom {
+	border: none;
+	transition: all 0.3s;
+	position: absolute;
+	border: 1px solid #111;
+	right: 50%;	
+	bottom: 10px;
+	left: 50%;
+	opacity: 0;
+}
+
+.box-img:hover .border-style-bottom {
+	opacity: 1;
+	border-right: 1px solid #111;
+	position: absolute;
+	right: 10px;	
+	left: 10px;
+	bottom: 10px;
+	transform: scale(1, 1);
+}
