@@ -36,11 +36,11 @@ class SubProduct extends Component {
     return (
       <Container>
         <Row>
-          { products.slice(0, 3).map(product => (
-            <Col md="4">
+          { products.slice(0, 4).map(product => (
+            <Col md="3">
               <Card className="box-add-cart">
                 <Link to={`/products/${product.id}`}>
-                  <CardImg top width="100%" height="400" src={ product.image } alt="Card image cap" />
+                  <CardImg top width="100%" height="360" src={ product.image } alt="Card image cap" />
                   <CartContext.Consumer>
                     { ({addToCart}) => (
                     <Button className="btn-add-cart" onClick={() => addToCart(product)}>
