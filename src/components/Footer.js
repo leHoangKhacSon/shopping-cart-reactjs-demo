@@ -8,6 +8,10 @@ import {
 import SubFooter from '../subComponents/SubFooter';
 import './Footer.css';
 import urlImg from '../img/tick.svg';
+import facebook from '../img/facebook.svg';
+import instagram from '../img/instagram.svg';
+import github from '../img/github.svg';
+import google from '../img/google.svg';
 
 const urlImage = urlImg;
     
@@ -28,16 +32,16 @@ class Footer extends Component {
                 </p>
                 <ul>
                   <li>
-                    <img src={urlImage} width="20" alt="icon" />
+                    <img src={facebook} width="20" alt="icon" />
                   </li> 
                   <li>
-                    <img src={urlImage} width="20" alt="icon" />
+                    <img src={instagram} width="20" alt="icon" />
                   </li> 
                   <li>
-                    <img src={urlImage} width="20" alt="icon" />
+                    <img src={github} width="20" alt="icon" />
                   </li> 
                   <li>
-                    <img src={urlImage} width="20" alt="icon" />
+                    <img src={google} width="20" alt="icon" />
                   </li> 
                   <li>
                     <img src={urlImage} width="20" alt="icon" />
@@ -51,21 +55,31 @@ class Footer extends Component {
                   Product
                 </p>
                 <ul>
-                  <SubFooter urlImage={urlImg}>
-                    Sliptick
-                  </SubFooter>
-                  <SubFooter urlImage={urlImage}>
-                    Sliptick
-                  </SubFooter>
-                  <SubFooter urlImage={urlImage}>
-                    Sliptick
-                  </SubFooter>
-                  <SubFooter urlImage={urlImage}>
-                    Sliptick
-                  </SubFooter>
-                  <SubFooter urlImage={urlImage}>
-                    Sliptick
-                  </SubFooter>
+                  <li>
+                    <SubFooter urlImage={urlImg}>
+                      Matte Lipstick
+                    </SubFooter>
+                  </li>
+                  <li>
+                    <SubFooter urlImage={urlImg}>
+                      Lip gloss
+                    </SubFooter>
+                  </li>
+                  <li>
+                    <SubFooter urlImage={urlImg}>
+                      Creame lipstick
+                    </SubFooter>
+                  </li>
+                  <li>
+                    <SubFooter urlImage={urlImg}>
+                      Early lipstick
+                    </SubFooter>
+                  </li>
+                  <li>
+                    <SubFooter urlImage={urlImg}>
+                      Lip balm
+                    </SubFooter>
+                  </li>
                 </ul>   
               </div>
             </Col>
@@ -75,21 +89,31 @@ class Footer extends Component {
                   Resource
                 </p>
                 <ul>
-                  <SubFooter urlImage={urlImage}>
-                    Sliptick
-                  </SubFooter>
-                  <SubFooter urlImage={urlImage}>
-                    Sliptick
-                  </SubFooter>
-                  <SubFooter urlImage={urlImage}>
-                    Sliptick
-                  </SubFooter>
-                  <SubFooter urlImage={urlImage}>
-                    Sliptick
-                  </SubFooter>
-                  <SubFooter urlImage={urlImage}>
-                    Sliptick
-                  </SubFooter>
+                  <li>
+                    <SubFooter urlImage={urlImg}>
+                      Coderx.com
+                    </SubFooter>
+                  </li>
+                  <li>
+                    <SubFooter urlImage={urlImg}>
+                      Github.com
+                    </SubFooter>
+                  </li>
+                  <li>
+                    <SubFooter urlImage={urlImg}>
+                      Google.com
+                    </SubFooter>
+                  </li>
+                  <li>
+                    <SubFooter urlImage={urlImg}>
+                      Reactjs.org
+                    </SubFooter>
+                  </li>
+                  <li>
+                    <SubFooter urlImage={urlImg}>
+                      Stackoverflow
+                    </SubFooter>
+                  </li>
                 </ul>   
               </div>
             </Col>
@@ -99,21 +123,31 @@ class Footer extends Component {
                   Contact
                 </p>
                 <ul>
-                  <SubFooter urlImage={urlImage}>
-                    Sliptick
-                  </SubFooter>
-                  <SubFooter urlImage={urlImage}>
-                    Sliptick
-                  </SubFooter>
-                  <SubFooter urlImage={urlImage}>
-                    Sliptick
-                  </SubFooter>
-                  <SubFooter urlImage={urlImage}>
-                    Sliptick
-                  </SubFooter>
-                  <SubFooter urlImage={urlImage}>
-                    Sliptick
-                  </SubFooter>
+                  <li>
+                    <SubFooter urlImage={urlImg}>
+                      Address: Da Nang City - Viet Nam
+                    </SubFooter>
+                  </li>
+                  <li>
+                    <SubFooter urlImage={facebook}>
+                      Facebook: coderx.facebook.com
+                    </SubFooter>
+                  </li>
+                  <li>
+                    <SubFooter urlImage={google}>
+                      Email: Sonqueen.no1@gmail.com
+                    </SubFooter>
+                  </li>
+                  <li>
+                    <SubFooter urlImage={urlImg}>
+                      Phonenumber: 033.6511.283
+                    </SubFooter>
+                  </li>
+                  <li>
+                    <SubFooter urlImage={instagram}>
+                      Instagram: coderx.instagram
+                    </SubFooter>
+                  </li>
                 </ul>   
               </div>
             </Col>
