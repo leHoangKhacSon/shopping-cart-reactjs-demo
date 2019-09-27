@@ -4,9 +4,8 @@
 /* ------------------------------------------- FOOTER -----------------------------------------------*/
 /* ------------------------------------------------------------------------------------------------- */
 .footer {
-	background-color: #999;
 	padding-top: 10px;
-	margin-top: 30px;
+	margin-top: 100px;
 }
 
 .footer .footer-title {
@@ -77,7 +76,6 @@
 
 .copyright {
 	border-top: 1px solid #CCC;
-	background-color: #999;
-	color: #EEE;
+	color: #333;
 	margin-left: 30%;
 }
