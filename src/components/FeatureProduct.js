@@ -5,7 +5,7 @@ Nav, NavItem, NavLink
 import classnames from 'classnames';
 
 import './FeatureProduct.css';
-import Product from '../Pages/Product';
+import SubProduct from './FeatureProduct/SubProduct';
 
 export default class FeatureProduct extends React.Component {
   constructor(props) {
@@ -58,13 +58,13 @@ export default class FeatureProduct extends React.Component {
         </Nav>
         <TabContent activeTab={this.state.activeTab}>
           <TabPane tabId="1">
-            <Product />
+            <SubProduct />
           </TabPane>
           <TabPane tabId="2">
-            <Product />
+            <SubProduct />
           </TabPane>
           <TabPane tabId="3">
-            <Product />
+            <SubProduct />
           </TabPane>
         </TabContent>
       </div>

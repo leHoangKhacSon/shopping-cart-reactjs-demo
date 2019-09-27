@@ -11,6 +11,10 @@ import ProductDetails from './Pages/ProductDetails';
 
 import slide1 from './img/slideshow1.jpg';
 import slide2 from './img/slideshow2.jpg';
+import freeShipping from './img/freeshipping.svg';
+import moneyBack from './img/moneyback.svg';
+import onlineSupport from './img/onlinesupport.svg';
+import bonusPlus from './img/bonusplus.svg';
 
 import { CartProvider } from './contexts/cart';
 
@@ -19,22 +23,22 @@ const itemsUrl = [
 ]
 const imgServices = [
   {
-    imgService: slide1,
+    imgService: freeShipping,
     title: "FREE SHIPPING",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo blanditiis odio."
   },
   {
-    imgService: slide1,
+    imgService: moneyBack,
     title: "MONEY BACK",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo blanditiis odio."
   },
   {
-    imgService: slide1,
+    imgService: onlineSupport,
     title: "ONLINE SUPPORT",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo blanditiis odio."
   },
   {
-    imgService: slide1,
+    imgService: bonusPlus,
     title: "BONUS PLUS",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo blanditiis odio."
   }
