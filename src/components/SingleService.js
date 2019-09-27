@@ -14,7 +14,7 @@ class SingleService extends Component {
             <Col md="3" className="border-benifit">
               <div className="single-service">
                 <div className="box-item">
-                  <img src={ service.imgService } height="20" width="20" alt="img service" />
+                  <img src={ service.imgService } height="40" width="40" alt="img service" />
                 </div>
                 <p className="box-title">{ service.title }</p>
                 <p>{ service.description }</p>
