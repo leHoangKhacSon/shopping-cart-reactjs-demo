@@ -3,12 +3,13 @@ import axios from 'axios';
 
 import {
   Container, Row, Col,
-  Card, CardImg, CardText, CardBody,
-  CardTitle, Button
+  Card, CardImg, 
+  Button
 } from 'reactstrap';
 import { Link } from "react-router-dom"; 
 
 import { CartContext } from '../contexts/cart';
+import imgCart from '../img/cart.svg';
 
 class Product extends Component {
   constructor(props) {
@@ -36,26 +37,26 @@ class Product extends Component {
         <h2>Products</h2>
         <Row>
           { products.map(product => (
-            <Col md="4">
-              <Card>
-                <CardImg top width="100%" src={ product.image } alt="Card image cap" />
-                <CardBody>
-                  <CardTitle>{ product.name }</CardTitle>
-                  <CardText>{ product.desciption }</CardText>
+            <Col md="3">
+              <Card className="box-add-cart">
+                <Link to={`/products/${product.id}`}>
+                  <CardImg top width="100%" height="360" src={ product.image } alt="Card image cap" />
                   <CartContext.Consumer>
                     { ({addToCart}) => (
-                    <Button onClick={() => addToCart(product)}>
+                    <Button className="btn-add-cart" onClick={() => addToCart(product)}>
                       Add to cart
+                      <img src={imgCart} alt="im" width={20} />
                     </Button> 
                     )}
                   </CartContext.Consumer> 
-                  <Link to={`/products/${product.id}`}>
-                    <Button>
-                      Details
-                    </Button>
-                  </Link>
-                </CardBody>
+                </Link>
               </Card>
+              <div className="price-cart">
+                <p>{ product.name }</p>
+                <p>$90.00
+                  <span>$100.00</span>
+                </p>
+              </div>
             </Col>
           )) }
         </Row>
