@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 
 import Slide from '../components/Slide';
 import SingleService from '../components/SingleService';
@@ -6,10 +6,8 @@ import HotProduct from '../components/HotProduct';
 import FeatureProduct from '../components/FeatureProduct';
 import Footer from '../components/Footer';
 
-class Home extends Component {
-  
-  render() {
-    const { items, services, imgsHotProduct } = this.props;
+const Home = (props) => {
+  const { items, services, imgsHotProduct } = props;
     return (
       <div>
         <Slide items={ items } />
@@ -19,7 +17,6 @@ class Home extends Component {
         <Footer />
       </div>
     )
-  }
 }
 
 export default Home;
