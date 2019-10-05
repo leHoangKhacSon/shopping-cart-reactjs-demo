@@ -5,8 +5,7 @@ import {
   NavbarToggler,
   NavbarBrand,
   Nav,
-  NavItem,
-  NavLink } from 'reactstrap';
+  NavItem } from 'reactstrap';
 import { Link } from "react-router-dom";  
 
 import { CartContext } from '../contexts/cart';
@@ -34,36 +33,24 @@ export default class TopMenu extends Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink>
-                  <Link to="/">Home</Link>
-                </NavLink>
+                <Link to="/">Home</Link>
               </NavItem>
               <NavItem>
-                <NavLink>
-                  <Link to="/products/">Products</Link>
-                </NavLink>
+                <Link to="/products/">Products</Link>
               </NavItem>
               <NavItem>
-                <NavLink>
-                  <Link to="#">Blog</Link>
-                </NavLink>
+                <Link to="#">Blog</Link>
               </NavItem>
               <NavItem>
-                <NavLink>
-                  <Link to="#">About</Link>
-                </NavLink>
+                <Link to="#">About</Link>
               </NavItem>
               <NavItem>
-                <NavLink>
-                  <Link to="#">Cteate Account</Link>
-                </NavLink>
-                <NavLink>
+                <Link to="#">Cteate Account</Link>
                   <CartContext.Consumer>
                     {({ cartItems }) => (
                       <Link to='/cart/'>Cart ({cartItems.length})</Link>
                     )}
                   </CartContext.Consumer>
-                </NavLink>
               </NavItem>
             </Nav>
           </Collapse>

@@ -53,31 +53,21 @@ const Footer = () => {
                 Product
               </p>
               <ul>
-                <li>
-                  <SubFooter urlImage={urlImg}>
-                    Matte Lipstick
-                  </SubFooter>
-                </li>
-                <li>
-                  <SubFooter urlImage={urlImg}>
-                    Lip gloss
-                  </SubFooter>
-                </li>
-                <li>
-                  <SubFooter urlImage={urlImg}>
-                    Creame lipstick
-                  </SubFooter>
-                </li>
-                <li>
-                  <SubFooter urlImage={urlImg}>
-                    Early lipstick
-                  </SubFooter>
-                </li>
-                <li>
-                  <SubFooter urlImage={urlImg}>
-                    Lip balm
-                  </SubFooter>
-                </li>
+                <SubFooter urlImage={urlImg}>
+                  Matte Lipstick
+                </SubFooter>
+                <SubFooter urlImage={urlImg}>
+                  Lip gloss
+                </SubFooter>
+                <SubFooter urlImage={urlImg}>
+                  Creame lipstick
+                </SubFooter>
+                <SubFooter urlImage={urlImg}>
+                  Early lipstick
+                </SubFooter>
+                <SubFooter urlImage={urlImg}>
+                  Lip balm
+                </SubFooter>
               </ul>   
             </div>
           </Col>
@@ -87,31 +77,21 @@ const Footer = () => {
                 Resource
               </p>
               <ul>
-                <li>
-                  <SubFooter urlImage={urlImg}>
-                    Coderx.com
-                  </SubFooter>
-                </li>
-                <li>
-                  <SubFooter urlImage={urlImg}>
-                    Github.com
-                  </SubFooter>
-                </li>
-                <li>
-                  <SubFooter urlImage={urlImg}>
-                    Google.com
-                  </SubFooter>
-                </li>
-                <li>
-                  <SubFooter urlImage={urlImg}>
-                    Reactjs.org
-                  </SubFooter>
-                </li>
-                <li>
-                  <SubFooter urlImage={urlImg}>
-                    Stackoverflow
-                  </SubFooter>
-                </li>
+                <SubFooter urlImage={urlImg}>
+                  Coderx.com
+                </SubFooter>
+                <SubFooter urlImage={urlImg}>
+                  Github.com
+                </SubFooter>
+                <SubFooter urlImage={urlImg}>
+                  Google.com
+                </SubFooter>
+                <SubFooter urlImage={urlImg}>
+                  Reactjs.org
+                </SubFooter>
+                <SubFooter urlImage={urlImg}>
+                  Stackoverflow
+                </SubFooter>
               </ul>   
             </div>
           </Col>
@@ -121,31 +101,21 @@ const Footer = () => {
                 Contact
               </p>
               <ul>
-                <li>
-                  <SubFooter urlImage={urlImg}>
-                    Address: Da Nang City - Viet Nam
-                  </SubFooter>
-                </li>
-                <li>
-                  <SubFooter urlImage={facebook}>
-                    Facebook: coderx.facebook.com
-                  </SubFooter>
-                </li>
-                <li>
-                  <SubFooter urlImage={google}>
-                    Email: Sonqueen.no1@gmail.com
-                  </SubFooter>
-                </li>
-                <li>
-                  <SubFooter urlImage={urlImg}>
-                    Phonenumber: 033.6511.283
-                  </SubFooter>
-                </li>
-                <li>
-                  <SubFooter urlImage={instagram}>
-                    Instagram: coderx.instagram
-                  </SubFooter>
-                </li>
+                <SubFooter urlImage={urlImg}>
+                  Address: Da Nang City - Viet Nam
+                </SubFooter>
+                <SubFooter urlImage={facebook}>
+                  Facebook: coderx.facebook.com
+                </SubFooter>
+                <SubFooter urlImage={google}>
+                  Email: Sonqueen.no1@gmail.com
+                </SubFooter>
+                <SubFooter urlImage={urlImg}>
+                  Phonenumber: 033.6511.283
+                </SubFooter>
+                <SubFooter urlImage={instagram}>
+                  Instagram: coderx.instagram
+                </SubFooter>
               </ul>   
             </div>
           </Col>

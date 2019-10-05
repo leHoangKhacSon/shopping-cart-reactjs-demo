@@ -11,8 +11,8 @@ const HotProduct = (props) => {
   return (
     <Container>
       <Row>
-        { imgsHotProduct.map((imgHotProduct) => (
-          <Col md="4" className="box-img">
+        { imgsHotProduct.map((imgHotProduct, index) => (
+          <Col key={index} md="4" className="box-img">
             <span className="border-style-left" />
             <span className="border-style-right" />
             <span className="border-style-bottom" />

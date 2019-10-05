@@ -16,8 +16,8 @@ const Cart = () => {
       <Row>
         <CartContext.Consumer>
          {({cartItems}) => (
-            cartItems.map(cartItem => (
-              <Col md="4">
+            cartItems.map((cartItem, index) => (
+              <Col key={index} md="4">
                 <Card>
                   <CardImg top width="100%" src={ cartItem.image } alt="Card image cap" />
                   <CardBody>

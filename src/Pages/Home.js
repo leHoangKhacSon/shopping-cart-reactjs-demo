@@ -6,8 +6,7 @@ import HotProduct from '../components/HotProduct';
 import FeatureProduct from '../components/FeatureProduct';
 import Footer from '../components/Footer';
 
-const Home = (props) => {
-  const { items, services, imgsHotProduct } = props;
+const Home = ({ items, services, imgsHotProduct }) => {
     return (
       <div>
         <Slide items={ items } />
