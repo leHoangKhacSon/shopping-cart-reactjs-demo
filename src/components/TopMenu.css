@@ -1,0 +1,15 @@
+.cart-quantity {
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  text-align: center;
+}
+
+.cart-quantity p {
+  color: #fff;
+  font-weight: 700;
+}

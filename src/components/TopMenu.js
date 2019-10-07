@@ -9,6 +9,8 @@ import {
 import { Link } from "react-router-dom";  
 
 import { CartContext } from '../contexts/cart';
+import shoppingCart from '../img/cart.svg';
+import './TopMenu.css';
 
 export default class TopMenu extends Component {
   constructor(props) {
@@ -50,7 +52,12 @@ export default class TopMenu extends Component {
               <NavItem>
                 <CartContext.Consumer>
                   {({ cartItems }) => (
-                    <Link to='/cart/'>Cart ({cartItems.length})</Link>
+                    <Link to='/cart/'>
+                      <img src={shoppingCart} alt='...' width={30} />
+                      <div className="cart-quantity">
+                        <p>{cartItems.length}</p>
+                      </div>
+                    </Link>
                   )}
                 </CartContext.Consumer>
               </NavItem>
