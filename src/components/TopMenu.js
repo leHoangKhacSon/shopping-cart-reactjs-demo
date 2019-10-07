@@ -45,7 +45,7 @@ export default class TopMenu extends Component {
                 <Link to="#">About</Link>
               </NavItem>
               <NavItem>
-                <Link to="#">Login</Link>
+                <Link to="/login/">Login</Link>
               </NavItem>
               <NavItem>
                 <CartContext.Consumer>
