@@ -66,7 +66,7 @@ function App() {
           <Route path="/" exact component={Index} />
           <Route path="/products/" exact component={Product} />
           <Route path="/cart/" component={Cart} />
-          <Route path="/products/:id" component={ProductDetails} />
+          <Route path="/products/:id" exact component={ProductDetails} />
           <Route path="/login/" exact component={Login} />
         </div>
       </Router>
