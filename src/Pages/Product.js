@@ -6,31 +6,47 @@ import {
   Card, CardImg, 
   Button
 } from 'reactstrap';
-import { Link } from "react-router-dom"; 
+import { Link } from "react-router-dom"
 
-import { CartContext } from '../contexts/cart';
-import imgCart from '../img/cart.svg';
+import { CartContext } from '../contexts/cart'
+import imgCart from '../img/cart.svg'
+import Pagination from '../components/Pagination'
 
 function Product() {
 
   const [ products, SetProducts ] = useState([])
+  const [ loading, setLoading ] = useState(false)
+  const [ currentPage, setCurrentPage ] = useState(1)
+  const [ productsPerPage, setProductsPerPage ] = useState(5)
 
-  // install data
+  // fetch data
   useEffect(() => {
-    axios.get('https://7x5xg.sse.codesandbox.io/products')
-    .then(res => {
+    const fetchProduct = async () => {
+      setLoading(true)
+      const res = await axios.get('https://7x5xg.sse.codesandbox.io/products')
       SetProducts(res.data)
-    })
+      setLoading(false)
+    }
+
+    fetchProduct()
   }, [])
+
+  // get current product
+  const indexOfLastProduct = currentPage * productsPerPage
+  const indexOfFirsrProduct = indexOfLastProduct - productsPerPage
+  const currentProducts = products.slice(indexOfFirsrProduct, indexOfLastProduct)
+
+  // change page 
+  const paginateHandler = number => {setCurrentPage(number)}
 
   return (
     <Container>
       <h2>Products</h2>
       <Row>
-        { products.map((product, index) => (
+        { currentProducts.map((product, index) => (
           <Col key={index} md="3">
             <Card className="box-add-cart">
-              <Link to={`/products/${product.id}`}>
+              <Link to={`/products/${product._id}`}>
                 <CardImg top width="100%" height="360" src={ product.image } alt="Card image cap" />
               </Link>
               <CartContext.Consumer>
@@ -53,6 +69,11 @@ function Product() {
           </Col>
         )) }
       </Row>
+      <Pagination 
+        productsPerPage={productsPerPage} 
+        totalProduct={products.length}
+        paginate={paginateHandler} 
+      />
     </Container> 
   )
 }
