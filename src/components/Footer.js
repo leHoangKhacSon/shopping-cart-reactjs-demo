@@ -12,8 +12,9 @@ import facebook from '../img/facebook.svg';
 import instagram from '../img/instagram.svg';
 import github from '../img/github.svg';
 import google from '../img/google.svg';
-
-const urlImage = urlImg;
+import twitter from '../img/twitter.svg';
+import address from '../img/address.svg';
+import phone from '../img/phone.svg';
 
 const Footer = () => {
   return (
@@ -30,19 +31,19 @@ const Footer = () => {
               </p>
               <ul>
                 <li>
-                  <img src={facebook} width="20" alt="icon" />
+                  <img src={facebook} width={30} alt="icon" />
                 </li> 
                 <li>
-                  <img src={instagram} width="20" alt="icon" />
+                  <img src={instagram} width={30} alt="icon" />
                 </li> 
                 <li>
-                  <img src={github} width="20" alt="icon" />
+                  <img src={github} width={30} alt="icon" />
                 </li> 
                 <li>
-                  <img src={google} width="20" alt="icon" />
+                  <img src={google} width={30} alt="icon" />
                 </li> 
                 <li>
-                  <img src={urlImage} width="20" alt="icon" />
+                  <img src={twitter} width={30} alt="icon" />
                 </li> 
               </ul>
             </div>
@@ -101,7 +102,7 @@ const Footer = () => {
                 Contact
               </p>
               <ul>
-                <SubFooter urlImage={urlImg}>
+                <SubFooter urlImage={address}>
                   Address: Da Nang City - Viet Nam
                 </SubFooter>
                 <SubFooter urlImage={facebook}>
@@ -110,7 +111,7 @@ const Footer = () => {
                 <SubFooter urlImage={google}>
                   Email: Sonqueen.no1@gmail.com
                 </SubFooter>
-                <SubFooter urlImage={urlImg}>
+                <SubFooter urlImage={phone}>
                   Phonenumber: 033.6511.283
                 </SubFooter>
                 <SubFooter urlImage={instagram}>

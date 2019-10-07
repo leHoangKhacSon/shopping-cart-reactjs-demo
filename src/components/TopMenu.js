@@ -45,12 +45,14 @@ export default class TopMenu extends Component {
                 <Link to="#">About</Link>
               </NavItem>
               <NavItem>
-                <Link to="#">Cteate Account</Link>
-                  <CartContext.Consumer>
-                    {({ cartItems }) => (
-                      <Link to='/cart/'>Cart ({cartItems.length})</Link>
-                    )}
-                  </CartContext.Consumer>
+                <Link to="#">Login</Link>
+              </NavItem>
+              <NavItem>
+                <CartContext.Consumer>
+                  {({ cartItems }) => (
+                    <Link to='/cart/'>Cart ({cartItems.length})</Link>
+                  )}
+                </CartContext.Consumer>
               </NavItem>
             </Nav>
           </Collapse>

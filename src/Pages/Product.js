@@ -32,15 +32,17 @@ function Product() {
             <Card className="box-add-cart">
               <Link to={`/products/${product.id}`}>
                 <CardImg top width="100%" height="360" src={ product.image } alt="Card image cap" />
-                <CartContext.Consumer>
-                  { ({addToCart}) => (
+              </Link>
+              <CartContext.Consumer>
+                { ({addToCart}) => (
+                <Link to="/cart/">
                   <Button className="btn-add-cart" onClick={() => addToCart(product)}>
                     Add to cart
                     <img src={imgCart} alt="im" width={20} />
                   </Button> 
-                  )}
-                </CartContext.Consumer> 
-              </Link>
+                </Link>
+                )}
+              </CartContext.Consumer> 
             </Card>
             <div className="price-cart">
               <p>{ product.name }</p>
