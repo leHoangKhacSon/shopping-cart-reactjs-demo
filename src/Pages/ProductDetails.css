@@ -1,0 +1,53 @@
+.product-details {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.product-details .product-details-img {
+  border: none;
+}
+
+.product-details .star {
+  width: 20px;
+  margin-bottom: 16px;
+}
+
+.title-page {
+	font-size: 30px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.product-details {
+    margin-left: 10px;
+    border: none;
+}
+
+.price-new {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.price-new span {
+    font-style: italic;
+}
+
+.price-new span, .price-tax {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.card-body p span {
+    font-weight: 300;
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+.product-details .button-add {
+	padding: 5px 115px;
+}
+
+.product-evaluate i {
+    color: yellowgreen;
+}
