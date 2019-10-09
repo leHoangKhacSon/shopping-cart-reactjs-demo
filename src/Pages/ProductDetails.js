@@ -9,6 +9,8 @@ import {
 import { Link } from "react-router-dom"; 
 
 import { CartContext } from '../contexts/cart';
+import star from '../img/star.svg';
+import './ProductDetails.css';
 
 function ProductDetails(props) {
   
@@ -27,13 +29,71 @@ function ProductDetails(props) {
 
   console.log(product);
   return (
-    <Row>
-      <Col md="4">
+    <Row className="product-details">
+      <Col md="3">
         <Card>
-          <CardImg top width="100%" src={product.image} alt="Card image cap" />
+          <CardImg 
+            top width="100%" 
+            src={product.image} 
+            alt="Card image cap" 
+            className="product-details-img"
+          />
+        </Card>
+      </Col>
+      <Col md="3">
+        <Card>    
           <CardBody>
-            <CardTitle>{product.name}</CardTitle>
-            <CardText>{product.desciption}</CardText>
+            <p className="price-new">
+              $90.00
+              <span>
+                $100.00
+              </span>
+            </p>
+            <React.Fragment>
+              <CardImg 
+                top width={20} 
+                src={star} 
+                alt="Card image cap" 
+                className="star"
+              />
+              <CardImg 
+              top width={20} 
+              src={star} 
+              alt="Card image cap" 
+              className="star"
+              />
+              <CardImg 
+              top width={20} 
+              src={star} 
+              alt="Card image cap" 
+              className="star"
+              />
+              <CardImg 
+              top width={20} 
+              src={star} 
+              alt="Card image cap" 
+              className="star"
+              />
+              <CardImg 
+              top width={20} 
+              src={star} 
+              alt="Card image cap" 
+              className="star"
+              />
+            </React.Fragment>
+            
+            <p>
+              Brand: <span>{product.name}</span>
+            </p>
+            <p>
+              Product code: <span>product10</span>
+            </p>
+            <p>
+              Availability: <span>In Stock</span>
+            </p>
+            <p>
+              Description: <span>{product.description}</span>
+            </p>
             <Link to="/cart/">
               <CartContext.Consumer>
                 {({addToCart}) => (
