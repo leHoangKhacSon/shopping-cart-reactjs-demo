@@ -1,8 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import { Container, Row, Col } from 'reactstrap';
 
 import './SingleService.css';
+import { string } from 'postcss-selector-parser';
 
 const SingleService = ({ services }) => {
 
@@ -26,3 +28,11 @@ const SingleService = ({ services }) => {
 }
 
 export default SingleService;
+
+SingleService.propTypes = {
+  services: PropTypes.shape([{
+    imgService: string,
+    title: string,
+    description: string
+  }])
+}

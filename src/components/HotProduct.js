@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import { Container, Row, Col, CardImg } from 'reactstrap';
 import { Link } from "react-router-dom"; 
@@ -29,3 +30,8 @@ const HotProduct = (props) => {
 }
 
 export default HotProduct;
+
+HotProduct.propTypes = {
+  imgsHotProduct: PropTypes.array
+}
+

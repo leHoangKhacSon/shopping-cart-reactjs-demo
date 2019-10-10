@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const Pagination = ({ productsPerPage, totalProduct, paginate }) => {
   // array pagination
@@ -24,3 +25,9 @@ const Pagination = ({ productsPerPage, totalProduct, paginate }) => {
 }
 
 export default Pagination
+
+Pagination.propTypes = {
+  productsPerPage: PropTypes.number,
+  totalProduct: PropTypes.number,
+  paginate: PropTypes.func
+}

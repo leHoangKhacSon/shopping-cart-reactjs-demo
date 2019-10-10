@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import {
   Carousel,
   CarouselItem,
@@ -91,3 +92,7 @@ class Slide extends Component {
 
 
 export default Slide;
+
+Slide.propTypes = {
+  items: PropTypes.array
+}

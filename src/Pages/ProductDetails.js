@@ -3,8 +3,8 @@ import axios from 'axios';
 
 import {
   Row, Col,
-  Card, CardImg, CardText, CardBody,
-  CardTitle, Button
+  Card, CardImg, CardBody,
+  Button
 } from 'reactstrap';
 import { Link } from "react-router-dom"; 
 
