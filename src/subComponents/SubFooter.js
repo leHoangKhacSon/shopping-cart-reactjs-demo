@@ -1,11 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import '../components/Footer.css';
 
-const SubFooter = (props) => {
-  const { children, urlImage } = props;
+const SubFooter = ({ children, urlImage }) => {
   return (
     <li>
       <img src={ urlImage } alt="..." width={25} />
@@ -15,3 +15,8 @@ const SubFooter = (props) => {
 }
 
 export default SubFooter;
+
+SubFooter.propTypes = {
+  children: PropTypes.string,
+  urlImage: PropTypes.string
+}
